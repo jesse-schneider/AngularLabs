@@ -29,6 +29,7 @@ export class LoginComponent implements OnInit {
         console.log('response from the post is ', response);
         let storageJson = JSON.stringify(response);
         sessionStorage.setItem("Authenticated_user", storageJson);
+        this.router.navigateByUrl('profile');
     }, (error) => {
       console.log('error during post was', error);
     });

@@ -13,7 +13,5 @@
     <input type="birthdate" [(ngModel)]="birthdate" name="birthdate" id="birthdate" />
     <label for="email" class="lbl">Email</label>
     <input type="email" [(ngModel)]="email" name="email" id="email" />
-    <label for="pwd" class="lbl">Password</label>
-    <input type="password" [(ngModel)]="password" name="pwd" id="pwd" />
-    <button (click)="show = !show" id="submitbutton" class="btn btn-dark btn-lg">Save</button>
+    <button (click)="saveSessionData();show = !show" id="submitbutton" class="btn btn-dark btn-lg">Save</button>
   </form>
