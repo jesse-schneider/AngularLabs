@@ -18,7 +18,7 @@ export class ProfileComponent implements OnInit {
   ngOnInit() {
     if(sessionStorage.getItem("Authenticated_user") == null)
     {
-      this.router.navigateByUrl("login");
+      return this.router.navigateByUrl("login");
     }
     console.log(sessionStorage.getItem("Authenticated_user"));
     let storage = JSON.parse(sessionStorage.getItem("Authenticated_user"));
